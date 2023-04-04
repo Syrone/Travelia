@@ -1,0 +1,76 @@
+.footer
+	.logo
+		img
+			width: 180px
+	&-top
+		display: grid
+		gap: 40px
+		padding-block: 60px
+	&-brand
+		.footer-text
+			margin-block: 20px
+	&-list
+		&-title
+			color: var(--text-gunmetal)
+			font-size: var(--fontSize-5)
+			font-weight: 600
+			margin-block-end: 15px
+		.footer-text
+			margin-block-end: 15px
+	&-link
+		margin-block-start: 10px
+		&:is(:hover, :focus-visible)
+			text-decoration: underline
+	&-bottom
+		padding-block: 30px
+		border-block-start: 1px solid var(--border-gainsboro)
+		&-link
+			&:is(:hover, :focus-visible)
+				text-decoration: underline
+
+		
+.social-list
+	display: flex
+	align-items: center
+	gap: 10px
+.social-link
+	color: var(--text-majorelle-blue)
+	font-size: 2rem
+	padding: 10px
+	border-radius: var(--radius-pill)
+	transition: var(--transition-1)
+	&:is(:hover, :focus-visible)
+		background-color: var(--bg-majorelle-blue)
+		color: var(--text-white)
+
+.input-field
+	height: 55px
+	padding-inline: 25px 60px
+	border: 1px solid var(--border-gainsboro)
+	border-radius: var(--radius-pill)
+	color: var(--text-gunmetal)
+	&:focus
+		border-color: var(--bg-majorelle-blue)
+.input-wrapper
+	position: relative
+.input-btn
+	width: 45px
+	height: 45px
+	background-color: var(--bg-majorelle-blue)
+	font-size: 2rem
+	display: grid
+	place-items: center
+	border-radius: var(--radius-circle)
+	position: absolute
+	top: 5px
+	right: 5px
+	bottom: 5px
+	transition: var(--transition-1)
+	color: var(--text-white)
+	ion-icon
+		transform: translateX(-2px) rotate(45deg)
+	&:is(:hover, :focus-visible)
+		background-color: var(--bg-ocean-blue)
+
+.copyright
+	margin-block-end: 20px
