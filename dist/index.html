@@ -7,29 +7,832 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<title>Travelia - Исследуй мир</title>
+	<meta name="description" content="Travelia - Исследуй мир">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
+	<link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
 	
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="./css/app.min.css">
+
+	<link rel="preload" as="image" href="./images/dist/hero-banner.png">
+	<link rel="preload" as="image" href="./images/dist/preloader.svg">
 
 </head>
 
 <body>
-
-	<div style="max-width: 700px; margin: auto">
-
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-
+	<div class="preloader" data-preloader>
+		<div class="preloader-inner">
+			<img src="./images/dist/preloader.svg" width="50" height="50" alt="preloader" class="img">
+		</div>
 	</div>
 
+	<header class="header" data-header>
+		<div class="container">
+
+			<a href="#" class="logo">
+				<img src="./images/dist/logo.svg" alt="logo" width="187" height="38">
+			</a>
+
+			<nav class="navbar" data-navbar>
+
+				<div class="navbar-top">
+					<a href="#" class="logo">
+						<img src="./images/dist/logo.svg" alt="logo" width="187" height="38">
+					</a>
+
+					<button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+						<ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+					</button>
+				</div>
+
+				<ul class="navbar-list">
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link active" data-nav-link>Главная</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link" data-nav-link>О Нас</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link" data-nav-link>Услуги</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link" data-nav-link>Прайс</a>
+					</li>
+
+					<li class="navbar-item">
+						<a href="#" class="navbar-link" data-nav-link>Связаться</a>
+					</li>
+					
+
+				</ul>
+
+				<div class="navbar-action">
+					<a href="#" class="login-btn">Войти</a>
+
+					<a href="#" class="btn btn-primary">Регистрация</a>
+				</div>
+
+			</nav>
+
+			<button class="nav-toggle-btn" aria-label="open menu" data-nav-toggler>
+				<ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+			</button>
+
+			<div class="overlay" data-overlay data-nav-toggler>
+
+			</div>
+
+		</div>
+	</header>
+
+	<main>
+		<article>
+
+			<section class="section hero has-bg-image" aria-label="hero" style="background-image: url(./images/dist/hero-bg.jpg);">
+				<div class="container">
+
+					<div class="hero-content">
+
+						<p class="hero-subtitle">
+							Исследуйте мир<img src="./images/dist/title-icon.svg" width="20" height="20" class="img" alt="world icon">
+						</p>
+
+						<h1 class="h1 title hero-title">
+							Это большой мир, идите и исследуйте его.
+						</h1>
+
+						<p class="hero-text">
+							Мы всегда делаем нашего клиента счастливым, предоставляя ему как можно больше возможностей выбора
+						</p>
+
+						<div class="wrapper">
+
+							<a href="#" class="btn btn-secondary">
+								<span class="span">Запланировать</span>
+
+								<ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+							</a>
+
+							<button class="hero-btn">
+
+								<div class="btn-img">
+									<img src="./images/dist/hero-button-img.jpg" width="100" height="100"  alt="our story" class="img-cover">
+
+									<ion-icon name="play" aria-hidden="true"></ion-icon>
+								</div>
+
+								<p class="text">Посмотреть историю</p>
+
+							</button>
+
+						</div>
+
+					</div>
+
+					<figure class="hero-banner">
+						<img src="./images/dist/hero-banner.png" width="631" height="735"  alt="hero" class="w-100">
+					</figure>
+
+				</div>
+			</section>
+
+			<section class="section service" aria-label="service">
+				<div class="container">
+
+					<div class="title-wrapper">
+
+						<p class="section-subtitle">
+							Что Мы Предлагаем
+						</p>
+
+						<h2 class="h2 title section-title">
+							Лучшие Ценности Для Вас
+						</h2>
+
+						<p class="section-text">
+							Воспользуйтесь различными преимуществами при использовании наших услуг.
+						</p>
+
+					</div>
+
+					<div class="service-card">
+
+						<div class="card-icon">
+							<img src="./images/dist/service-icon-1.svg" width="60" height="60" loading="lazy" alt="icon">
+						</div>
+
+						<h3 class="h3 title card-title">
+							Большой выбор
+						</h3>
+
+						<p class="card-text">
+							Всего 460+ направлений, с которыми мы работаем.
+						</p>
+
+					</div>
+
+					<div class="service-card">
+
+						<div class="card-icon">
+							<img src="./images/dist/service-icon-2.svg" width="60" height="60" loading="lazy" alt="icon">
+						</div>
+
+						<h3 class="h3 title card-title">
+							Лучший экскурсовод
+						</h3>
+
+						<p class="card-text">
+							Наш гид с более чем 15-летним опытом работы.
+						</p>
+
+					</div>
+
+					<div class="service-card">
+
+						<div class="card-icon">
+							<img src="./images/dist/service-icon-3.svg" width="60" height="60" loading="lazy" alt="icon">
+						</div>
+
+						<h3 class="h3 title card-title">
+							Простое бронирование 
+						</h3>
+
+						<p class="card-text">
+							Простой и быстрый процесс покупки билетов.
+						</p>
+
+					</div>
+
+				</div>
+			</section>
+			
+			<section class="section desti" aria-label="destination">
+				<div class="container">
+
+					<p class="section-subtitle">
+						Лучшие направления
+					</p>
+
+					<h2 class="h2 title section-title">
+						Исследуйте лучшие направления
+					</h2>
+
+					<ul class="desti-list">
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-1.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой дель Пинчо" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой дель Пинчо</a>
+									</h3>
+
+									<address class="card-text">
+										Рим, Италия
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.7
+										</span>
+
+										<p class="rating-text">
+											(11.1k Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-2.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой Пакистанского монумента" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой Пакистанского монумента</a>
+									</h3>
+
+									<address class="card-text">
+										Исламабад, Пакистан
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.6
+										</span>
+
+										<p class="rating-text">
+											(16.9k Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-3.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой Бурдж-Халифа" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой Бурдж-Халифа</a>
+									</h3>
+
+									<address class="card-text">
+										Небоскрёб в Дубае
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.7
+										</span>
+
+										<p class="rating-text">
+											(120k Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-4.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой Милейду" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой Милейду</a>
+									</h3>
+
+									<address class="card-text">
+										Остров на Мальдивах
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.7
+										</span>
+
+										<p class="rating-text">
+											(70 Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-5.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой Тау" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой Тау</a>
+									</h3>
+
+									<address class="card-text">
+										Остров в Сиамском заливе
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.5
+										</span>
+
+										<p class="rating-text">
+											(985 Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li>
+							<div class="desti-card">
+
+								<div class="card-banner img-holder" style="--width: 600; --height: 650;">
+									<img src="./images/dist/destination-6.jpg" width="600" height="650" loading="lazy" alt="Насладитесь красотой Мечети Ортакей" 
+										class="img-cover">
+
+									<span class="card-price">
+										$340
+									</span>
+								</div>
+
+								<div class="card-content">
+
+									<h3 class="h3 title">
+										<a href="#" class="card-title">Насладитесь красотой Мечети Ортакей</a>
+									</h3>
+
+									<address class="card-text">
+										Мечеть в Стамбуле, Турция
+									</address>
+
+									<div class="card-rating">
+										<span class="span">
+											<ion-icon name="star" aria-hidden="true"></ion-icon>
+
+											4.8
+										</span>
+
+										<p class="rating-text">
+											(29.6k Отзывов)
+										</p>
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+					</ul>
+
+					<a href="#" class="btn btn-primary">
+						Просмотреть всё
+					</a>
+
+				</div>
+			</section>
+
+			<section class="section exp" aria-label="experience">
+				<div class="container">
+
+					<div class="exp-content">
+
+						<p class="section-subtitle">
+							Наш Опыт
+						</p>
+
+						<h2 class="h2 title section-title">
+							Благодаря нашему опыту мы будем помогать вам
+						</h2>
+
+						<p class="section-text">
+							С момента открытия мы всегда ставили на первое место удобство наших пользователей, обеспечивая низкие цены и простоту процесса.
+						</p>
+
+						<ul class="exp-list">
+
+							<li class="exp-item">
+								<h3 class="h3 title item-title">
+									20
+								</h3>
+
+								<p class="item-text">
+									Годы <br>
+									опыта
+								</p>
+							</li>
+
+							<li class="exp-item">
+								<h3 class="h3 title item-title">
+									460+
+								</h3>
+
+								<p class="item-text">
+									Сотрудничество <br>
+									по назначению
+								</p>
+							</li>
+
+							<li class="exp-item">
+								<h3 class="h3 title item-title">
+									50k+
+								</h3>
+
+								<p class="item-text">
+									Довольных <br>
+									клиентов
+								</p>
+							</li>
+							
+						</ul>
+						
+					</div>
+
+					<figure class="exp-banner">
+						<img src="./images/dist/experience-banner.png" width="550" height="660" loading="lazy" alt="Банер - опыт работы" 
+							class="w-100">
+
+						<img src="./images/dist/exp-shape.svg" width="75" height="109" loading="lazy" alt="Поддержка гида 24/7"
+							class="exp-shape">
+					</figure>
+
+				</div>
+			</section>
+
+			<section class="section gallery" aria-label="gallery">
+				<div class="container">
+
+					<p class="section-subtitle">
+						Фотогалерея
+					</p>
+
+					<h2 class="h2 title section-title">
+						Фото из путешествий
+					</h2>
+
+					<ul class="gallery-list">
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 925;">
+								<img src="./images/dist/gallery-1.jpg" width="700" height="925" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 925;">
+								<img src="./images/dist/gallery-2.jpg" width="700" height="925" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 840;">
+								<img src="./images/dist/gallery-3.jpg" width="700" height="840" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+								<img src="./images/dist/gallery-4.jpg" width="700" height="378" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+								<img src="./images/dist/gallery-5.jpg" width="700" height="378" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+						<li class="gallery-item">
+
+							<figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+								<img src="./images/dist/gallery-6.jpg" width="700" height="378" loading="lazy" alt="Галерея"
+									class="img-cover">
+							</figure>
+
+						</li>
+
+					</ul>
+
+				</div>
+			</section>
+
+			<section class="section cta" aria-label="call to action">
+				<div class="container">
+
+					<div class="cta-card has-bg-img" style="background-image: url(./images/dist/cta-bg.jpg);">
+					
+						<h2 class="h2 title section-title">
+							Приготовьте себя и начните исследовать красоты мира.
+
+							<img src="./images/dist/title-icon.svg" width="36" height="36" loading="lazy" alt="icon" 
+								class="img">
+						</h2>
+
+						<p class="section-text">
+							У нас есть много специальных предложений специально для вас
+						</p>
+
+						<a href="#" class="btn btn-primary">Начать</a>
+						
+					</div>
+
+				</div>
+			</section>
+
+		</article>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="footer-top">
+
+				<div class="footer-brand">
+
+					<a href="#" class="logo">
+						<img src="./images/dist/logo.svg" width="187" height="38" alt="logo">
+					</a>
+
+					<p class="footer-text">
+						Мы всегда делаем нашего клиента счастливым, предоставляя ему как можно больше возможностей выбора
+					</p>
+
+					<ul class="social-list">
+
+						<li>
+							<a href="#" class="social-link">
+								<ion-icon name="logo-instagram"></ion-icon>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="social-link">
+								<ion-icon name="logo-facebook"></ion-icon>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="social-link">
+								<ion-icon name="logo-twitter"></ion-icon>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<ul class="footer-list">
+
+					<li>
+						<p class="footer-list-title">
+							О Сайте
+						</p>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							О нас
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Особенности
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Новости
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Меню
+						</a>
+					</li>
+
+				</ul>
+
+				<ul class="footer-list">
+
+					<li>
+						<p class="footer-list-title">
+							О Компании
+						</p>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Почему мы
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Наши партнеры
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							FAQ
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Блог
+						</a>
+					</li>
+
+				</ul>
+
+				<ul class="footer-list">
+
+					<li>
+						<p class="footer-list-title">
+							Поддержка
+						</p>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Аккаунт
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Центр поддержки
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Обратная связь
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Связаться
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">
+							Доступность
+						</a>
+					</li>
+
+				</ul>
+
+				<div class="footer-list">
+
+					<p class="footer-list-title">
+						Свяжитесь с нами
+					</p>
+
+					<p class="footer-text">
+						Вопросы или пожелания? Мы будем рады услышать вас.
+					</p>
+
+					<form class="input-wrapper">
+						<input type="email" name="email_address" placeholder="Ваша почта" autocapitalize="off" required
+							class="input-field">
+
+						<button type="submit" class="input-btn" aria-label="отправить сообщение">
+							<ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
+						</button>
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="footer-bottom">
+
+				<p class="copyright">
+					Copyright 2023.
+				</p>
+
+				<ul class="footer-bottom-list">
+
+					<li>
+						<a href="#" class="footer-bottom-link">
+							Правила и условия
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-bottom-link">Конфиденциальность и политика</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</footer>
+	
+
 	<script src="js/app.min.js"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
